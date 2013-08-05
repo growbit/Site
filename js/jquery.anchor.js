@@ -18,7 +18,7 @@
 	jQuery.fn.anchorAnimate = function(settings) {
 
 		settings = jQuery.extend({
-			speed : 1100,
+			speed : 1000,
 			offset: 0
 		}, settings);	
 

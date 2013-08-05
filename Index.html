@@ -6,10 +6,17 @@
     <link rel="stylesheet" href="css/default.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100, 500' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/jquery.anchor.js"></script>
     <script src="js/default.js"></script>
+    <script>
+    function menu(t) {
+        $('.nav a').removeClass('active');
+
+        $(t).addClass('active');    
+    }
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -21,46 +28,94 @@
         <div class="nav-container">
             <div class="nav">
                 <ul>
-                    <li><a href="#inicio" class="anchor" id="menuhover">Início</a></li>
-                    <li><a href="#solucoes" class="anchor" id="menuhover">Soluções</a></li>
-                    <li><a href="#clientes" class="anchor" id="menuhover">Clientes</a></li>
-                    <li><a href="#parceiros" class="anchor" id="menuhover">Parceiros</a></li>
-                    <li><a href="#impressa" class="anchor" id="menuhover">Imprensa</a></li>
-                    <li><a href="#contato" class="anchor" id="menuhover">Contato</a></li>
+                    <li><a href="#inicio" class="anchor" onClick="menu(this); return false">Início</a></li>
+                    <li><a href="#servicos" class="anchor" onClick="menu(this); return false">Serviços</a></li>
+                    <li><a href="#relacionamentos" class="anchor" onClick="menu(this); return false">Relacionamentos</a></li>
+                    <li><a href="#parceiros" class="anchor" onClick="menu(this); return false">Parceiros</a></li>
+                    <li><a href="#midia" class="anchor">Mídia</a></li>
+                    <li><a href="#contato" class="anchor">Contato</a></li>
                 </ul>
                 <div class="clear"></div>
             </div>
         </div>
         <div class="main-content" id="inicio">
             <a id="inicio"></a>
+            <div id="iniciocontainer"></div>
         </div>
-        <div class="main-content" id="solucoes">
-            <a id="solucoes"></a>
-            <div class="solucoes">
-                <h2>Nem sempre se pode
-                    tomar decisões sozinho...
-                </h2>
-                <h4>
-                    Grow bit, seu parceiro para soluções em TI
-                    Orientadas a negócio.
-                </h4>
+        <div class="main-content" id="servicos">
+            <a id="servicos"></a>
+            <div class="servicos">
+                <h2>Nem sempre se pode tomar decisões sozinho...</h2>
+                <h4>Grow bit, seu parceiro para soluções em TI orientadas a negócio.</h4>
+            </div>
+            <div id="servicocontainer">
+                <div class="servico">
+                    <dl>
+                        <dt>Consultoria em TI</dt>
+                        <dd>Arquitetura de aplicações</dd>
+                        <dd>Metodologia de desenvolvimento de aplicações</dd> 
+                        <dd>Gerenciamento de projetos TIC</dd>
+                        <dd>Análise de negócio</dd>
+                        <dd>Desenho de processos</dd>
+                        <dd>&nbsp;</dd>
+                    </dl>
+                </div>
+                <div class="servico">
+                    <dl>
+                        <dt>Solucões</dt>
+                        <dd>Nix e Vitta - Redes sociais profissionais</dd>
+                        <dd>Sales domain - Gestão de equipe de vendas e CRM</dd>
+                        <dd>Showroom de vendas (mobile)</dd>
+                        <dd>Gestão de pedidos</dd>
+                        <dd>Comissionamento de Marketing de rede</dd>
+                        <dd>Framework para aplicações web </dd>
+                    </dl>
+                </div>
+                <div class="servico">
+                    <dl>
+                        <dt>Desenvolvimento de software</dt>
+                        <dd>Software sob demanda</dd>
+                        <dd>Outsourcing</dd>
+                        <dd>Fábrica de software</dd>
+                        <dd>Desenvolvimento de aplicações Mobile</dd>
+                        <dd>Dashboard</dd>
+                        <dd>&nbsp;</dd>
+                    </dl>
+                </div>
             </div>
         </div>
-        <div class="main-content" id="clientes">	
-            <a id="clientes"></a>
-            <div class="clientes">
-                <h2>Aqui você não vai ser um pessoa arrependida</h2>
+        <div class="main-content" id="relacionamentos">	
+            <a id="relacionamentos"></a>
+            <div class="relacionamentos">
+                <h2>Soluções inteligentes para clientes inteligentes.</h2>
                 <h4>Na Grow Bit é como se o cliente estivesse desenvolvendo o seu próprio software</h4>
+            </div>
+            <div id="relacionamentoscontainer">
+                <ul>
+                    <li><a href="http://www.assohonda.org.br/" target="_blank"><img src="images/assohonda.png" title="Assossiação Brasileira de Distribuidores Honda" /></a></li>
+                    <li><a href="http://sonovitta.com/" target="_blank"><img src="images/sonovitta.png" title="Sonovitta" /></a></li>
+                </ul>
             </div>
         </div>
         <div class="main-content" id="parceiros">    
-            <a id="parceiros"><h1>Parceiros</h1></a>
+            <a id="parceiros"></a>
+            <div class="parceiros">
+                <h2>''A confiança que temos em nós mesmos, reflete-se em grande parte, na confiança que temos nos outros.''</h2>
+                <h4>François La Rochefoucauld</h4>
+            </div>
         </div>
-        <div class="main-content" id="impresa">    
-            <a id="impressa"><h1>Impresa</h1></a>
+        <div class="main-content" id="midia">    
+            <a id="impressa"></a>
+            <div class="midia">
+            </div>
         </div>
         <div class="main-content" id="contato">    
-            <a id="contato"><h1>Contato</h1></a>
+            <a id="contato"></a>
+            <div class="servicos">
+                <h2>Fale conosco</h2>
+                <h4><i class="icon-envelope-alt"></i> contato@growbit.com.br</h4>
+                <h4><i class="icon-phone"></i> +55 (79) 3259-5984</h4>
+            </div>
         </div>
     </div>
 </body>
